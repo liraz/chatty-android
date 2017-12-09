@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_layout"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:src="@drawable/logo_main"
+                android:layout_marginBottom="50dp"
+                android:layout_width="145dp"
+                android:layout_height="145dp" />
+
+        </LinearLayout>
+
+        <RadioGroup android:id="@+id/toggleGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ToggleButton android:id="@+id/phone_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tooglebutton_selector"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textOn="PHONE"
+                android:textOff="PHONE"
+                android:checked="true"
+                />
+            <ToggleButton android:id="@+id/email_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="19sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/tooglebutton_selector"
+                android:textOn="EMAIL"
+                android:textOff="EMAIL"
+                />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/phone_fields_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout
+                    android:id="@+id/phone_area_code"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/phone_area_code_image"
+                        android:src="@mipmap/il_flag"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                    <TextView
+                        android:id="@+id/phone_area_code_text"
+                        android:text="IL +972"
+                        android:textSize="19sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        app:iiv_size="8dp"
+                        app:iiv_color="@color/colorPrimary"
+                        app:iiv_icon="gmd_arrow_drop_down" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.3"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/phone_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#7effffff"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Phone"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:text="Full Name: "
+                    android:textSize="19sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#7effffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/phone_name_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#7effffff"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_fields_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:text="Email: "
+                    android:textSize="19sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#7effffff"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/email_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#7effffff"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:text="Full Name: "
+                    android:textSize="19sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#7effffff"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/full_name_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#7effffff"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:text="Password: "
+                    android:textSize="19sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#7effffff"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/password_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#7effffff"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="false"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/login_txt"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in." />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

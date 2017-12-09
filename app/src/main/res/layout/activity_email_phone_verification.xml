@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle"/>
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/verify_status_icon"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_centerInParent="true"
+                app:iiv_size="84dp"
+                app:iiv_color="@color/colorPrimary"
+                app:iiv_icon="gmd_cancel" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/verify_status_txt"
+            android:text="NOT VERIFIED"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/verify_description_txt"
+            android:text="Check your inbox for an email to complete your verification."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/phone_verify_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:text="Code: "
+                android:textSize="19sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#7effffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/code_text"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#7effffff"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="19sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:hint=""
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/verify_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:text="Verify" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resend_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="false"
+            android:text="Resend Email" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="false"
+            android:text="Next" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log in." />
+
+</RelativeLayout>

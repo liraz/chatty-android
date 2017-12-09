@@ -15,7 +15,10 @@ out/
 
 # Gradle files
 .gradle/
+.gradle/wrapper/
 build/
+gradlew
+gradlew.bat
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -34,7 +37,11 @@ captures/
 
 # Intellij
 *.iml
-.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
 
 # Keystore files
 *.jks
@@ -45,10 +52,40 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
+# Ids that should not be committed to Github
+ids.xml
+
 # Freeline
 freeline.py
 freeline/
 freeline_project_description.json
 
-# Ids that should not be committed to Github
-ids.xml
+
+# Built application files
+/*/build/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

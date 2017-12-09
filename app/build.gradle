@@ -1,0 +1,158 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    dexOptions {
+        jumboMode true
+    }
+
+    defaultConfig {
+        applicationId "org.lirazs.chatty"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [onesignal_app_id: "0108469b-40ec-4005-920e-0ce4c9c087de",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("release.keystore")
+            storePassword ""
+            keyAlias ""
+            keyPassword ""
+        }
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-square-dagger.pro',
+                    'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name:'material-search', ext:'aar')
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+
+    compile 'com.onesignal:OneSignal:3.4.3@aar'
+
+    // Required for OneSignal, even if you have added FCM.
+    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+
+    // Required for geotagging
+    compile "com.google.android.gms:play-services-location:11.0.4"
+
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'com.google.firebase:firebase-database:11.0.4'
+    compile 'com.google.firebase:firebase-storage:11.0.4'
+
+    // Google Sign In SDK (only required for Google Sign In)
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    // Google location
+    compile 'com.google.android.gms:play-services-places:11.0.4'
+
+    // Facebook Android SDK (only required for Facebook Login)
+    // Used in FacebookLoginActivity. This is only compiled into the minSdkJellybean variant of this
+    // app. You can build a 'minSdkGingerbread' variant to test on devices with 9 <= SDK <= 15.
+    compile 'com.facebook.android:facebook-android-sdk:4.23.0'
+
+    // image load
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+
+    // chat ui
+    compile 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+
+    // permissions
+    compile 'com.github.ParkSangGwon:TedPermission:v1.0.12'
+
+    // custom facebook button
+    compile 'com.github.medyo:fancybuttons:1.8.3'
+
+    // Dagger dependencies, IOC
+    compile 'com.google.dagger:dagger:2.9'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+
+    // butterknife injection of views
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    // event bus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    // aes encryption
+    compile 'com.scottyab:aescrypt:0.0.1'
+
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+
+    // Twitter Android SDK (only required for Twitter Login)
+    compile('com.twitter.sdk.android:twitter-core:1.6.6@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
+        transitive = true;
+    }
+
+    compile('com.mikepenz:materialdrawer:5.9.4@aar') {
+        transitive = true;
+        exclude group: 'com.android.support', module: 'support-annotations';
+        exclude group: 'com.android.support', module: 'recyclerview-v7';
+        exclude group: 'com.android.support', module: 'appcompat-v7';
+        exclude group: 'com.android.support', module: 'cardview-v7';
+        exclude group: 'com.android.support', module: 'design';
+    }
+    compile 'com.mikepenz:google-material-typeface:3.0.1.1.original@aar'
+
+    compile 'com.github.akashandroid90:imageletter:1.13@aar'
+    compile 'com.github.clans:fab:1.6.4'
+
+    compile 'com.github.emanzanoaxa:RippleEffect:52ea2a0ab6'
+
+    compile 'com.vanniktech:emoji-one:0.4.0'
+
+    compile 'com.github.stfalcon:chatkit:0.2.1'
+    compile 'io.realm:android-adapters:2.0.0'
+
+    compile 'com.github.pchmn:MaterialChipsInput:1.0.8'
+
+    compile 'com.github.heetch:Android-country-picker:1.0.6'
+
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+    compile 'com.wang.avi:library:2.1.3'
+
+    compile 'com.googlecode.libphonenumber:libphonenumber:8.8.1'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

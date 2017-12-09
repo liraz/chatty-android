@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="scrimInsetForeground" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_collapsedIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>
