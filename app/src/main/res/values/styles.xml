@@ -10,7 +10,7 @@
         <item name="actionMenuTextColor">@color/white</item>
         <item name="actionBarStyle">@style/MyTheme.ActionBarStyle</item>
         <item name="android:itemTextAppearance">@style/TextAppearance</item>
-        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="MyTheme.ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
