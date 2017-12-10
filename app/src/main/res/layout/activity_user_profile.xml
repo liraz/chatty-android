@@ -12,11 +12,11 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        app:title="@string/app_name"
         android:background="@color/colorPrimary"
-        app:title="Chatty"
-        app:titleTextColor="@color/colorPrimary"
-        app:actionMenuTextColor="@color/colorPrimary"
-        android:actionMenuTextColor="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:actionMenuTextColor="@color/white"
+        android:actionMenuTextColor="@color/white"
         app:theme="@style/MyTheme.ActionBarStyle"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 

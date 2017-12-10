@@ -134,6 +134,9 @@ public class EmailAndPhoneLoginActivity extends BaseActivity {
                     emailFieldsContainer.setVisibility(View.GONE);
                     phoneFieldsContainer.setVisibility(View.VISIBLE);
 
+                    phoneButton.setTextColor(getResources().getColor(R.color.white));
+                    emailButton.setTextColor(getResources().getColor(R.color.colorPrimary));
+
                     buttonView.post(new Runnable() {
                         @Override
                         public void run() {
@@ -150,6 +153,9 @@ public class EmailAndPhoneLoginActivity extends BaseActivity {
                 if (isChecked) {
                     emailFieldsContainer.setVisibility(View.VISIBLE);
                     phoneFieldsContainer.setVisibility(View.GONE);
+
+                    emailButton.setTextColor(getResources().getColor(R.color.white));
+                    phoneButton.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     buttonView.post(new Runnable() {
                         @Override

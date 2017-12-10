@@ -14,10 +14,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
-        app:titleTextColor="@color/colorPrimary"
-        app:actionMenuTextColor="@color/colorPrimary"
-        android:actionMenuTextColor="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:actionMenuTextColor="@color/white"
+        android:actionMenuTextColor="@color/white"
         app:theme="@style/MyTheme.ActionBarStyle"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -65,10 +65,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
-        android:tint="@color/colorPrimary"
+        android:tint="@color/white"
         android:src="@drawable/ic_mode_edit_white_24dp"
-        fab:fab_colorNormal="@color/colorPrimaryDark"
+        fab:fab_colorNormal="@color/colorPrimary"
         fab:fab_colorPressed="@color/colorPrimaryDark"
-        fab:fab_colorRipple="@color/colorPrimary" />
+        fab:fab_colorRipple="@color/colorPrimaryDark" />
 
 </RelativeLayout>

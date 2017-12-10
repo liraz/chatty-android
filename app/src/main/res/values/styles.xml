@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/white</item>
-        <item name="actionModeBackground">@color/colorPrimaryDark</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
         <item name="android:actionModeBackground">@color/colorPrimary</item>
         <item name="actionMenuTextColor">@color/white</item>
         <item name="actionBarStyle">@style/MyTheme.ActionBarStyle</item>
@@ -24,7 +24,7 @@
     </style>
 
     <style name="TextAppearance">
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -34,11 +34,11 @@
 
     <style name="AppTheme.WithToolbar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/primary_text</item>
-        <item name="actionModeBackground">@color/colorPrimaryDark</item>
-        <item name="android:actionModeBackground">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColorSecondary">@color/colorPrimary</item>
         <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
     </style>
@@ -50,7 +50,7 @@
     <style name="AppThemeFullScreenImage" parent="Theme.Design.Light.NoActionBar">
         <item name="android:windowBackground">@color/white</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -70,7 +70,7 @@
 
     <!-- Dark Buttons -->
     <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
         <item name="android:layout_marginRight">4dp</item>
         <item name="android:layout_marginLeft">4dp</item>
         <item name="android:textColor">@color/colorPrimary</item>

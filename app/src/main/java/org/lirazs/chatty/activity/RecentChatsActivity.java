@@ -184,7 +184,7 @@ public class RecentChatsActivity extends BaseActivity implements DialogsListAdap
 
         Drawable icon = new IconicsDrawable(this)
                 .icon(GoogleMaterial.Icon.gmd_add)
-                .color(ResourcesCompat.getColor(getResources(), R.color.colorPrimary, null))
+                .color(ResourcesCompat.getColor(getResources(), R.color.white, null))
                 .sizeDp(18);
         newMessage.setImageDrawable(icon);
     }
@@ -195,6 +195,7 @@ public class RecentChatsActivity extends BaseActivity implements DialogsListAdap
         FirebaseUserObject currentUser = authService.getCurrentUser();
 
         final IProfile profile = new ProfileDrawerItem()
+                .withTextColor(getResources().getColor(R.color.colorPrimary))
                 .withName(currentUser.getSafeName())
                 .withEmail(currentUser.getEmail());
 
@@ -204,6 +205,7 @@ public class RecentChatsActivity extends BaseActivity implements DialogsListAdap
 
         AccountHeader accountHeader = new AccountHeaderBuilder()
                 .withActivity(this)
+                .withTextColor(getResources().getColor(R.color.colorPrimary))
                 .withCompactStyle(false)
                 .addProfiles(profile)
                 .withSavedInstance(savedInstanceState)

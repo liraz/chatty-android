@@ -13,10 +13,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
-        app:titleTextColor="@color/colorPrimary"
-        app:actionMenuTextColor="@color/colorPrimary"
-        android:actionMenuTextColor="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:actionMenuTextColor="@color/white"
+        android:actionMenuTextColor="@color/white"
         app:theme="@style/MyTheme.ActionBarStyle"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
