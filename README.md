@@ -5,7 +5,7 @@
 #
 Android chat application using Firebase, EventBus, Realm, OneSignal, Chatkit, Butterknife & Dagger
 
-#### Features
+### Features
 
 1. Login using Email, Phone number or Facebook
 2. Signup using Email, Phone number or Facebook
@@ -30,29 +30,29 @@ Android chat application using Firebase, EventBus, Realm, OneSignal, Chatkit, Bu
    1. Contacts, messages & recents chats are persisted in user's device
 13. Messages are encrypted and decrypted on the other side
 
-#### Using the following libraries
+### Using the following libraries
 
-1. https://github.com/mikepenz/MaterialDrawer - side menu in the app
-2. https://github.com/mikepenz/Android-Iconics - automatic high quality icons library
-3. https://github.com/akashandroid90/ImageLetterIcon - generating letter images for users without a profile picture
-4. https://github.com/Clans/FloatingActionButton - for floating action buttons
-5. https://github.com/traex/RippleEffect - for ripple effects on components and views
-6. https://github.com/vanniktech/Emoji - for showing emoji icons and emoji keyboard
-7. https://github.com/stfalcon-studio/ChatKit - for showing chat bubbles
-8. https://github.com/realm/realm-android-adapters - for Realm integration in Android
-9. https://github.com/pchmn/MaterialChipsInput - for users selections using a chips input - used in the new group creation process
-10. https://github.com/heetch/Android-country-picker - a picker for countries when selecting phone area codes
-11. https://github.com/afollestad/material-dialogs - for showing material dialogs
-12. https://github.com/81813780/AVLoadingIndicatorView - loaders library - used for the typing indicator
-13. https://github.com/googlei18n/libphonenumber - used for phone number validation and format
-14. https://github.com/ParkSangGwon/TedPermission - for better async permissions support on Android 6+ devices
-15. https://github.com/google/dagger - Dagger framework
-16. https://github.com/JakeWharton/butterknife - Butterknife framework
-17. https://github.com/greenrobot/EventBus - for dispatching and listening to events between services & views
-18. https://github.com/scottyab/AESCrypt-Android - for messages encryption
-19. https://github.com/bumptech/glide - for automatic & easy aync images
-20. https://github.com/OneSignal/OneSignal-Android-SDK - OneSignal SDK for android
+* https://github.com/mikepenz/MaterialDrawer - side menu in the app
+* https://github.com/mikepenz/Android-Iconics - automatic high quality icons library
+* https://github.com/akashandroid90/ImageLetterIcon - generating letter images for users without a profile picture
+* https://github.com/Clans/FloatingActionButton - for floating action buttons
+* https://github.com/traex/RippleEffect - for ripple effects on components and views
+* https://github.com/vanniktech/Emoji - for showing emoji icons and emoji keyboard
+* https://github.com/stfalcon-studio/ChatKit - for showing chat bubbles
+* https://github.com/realm/realm-android-adapters - for Realm integration in Android
+* https://github.com/pchmn/MaterialChipsInput - for users selections using a chips input - used in the new group creation process
+* https://github.com/heetch/Android-country-picker - a picker for countries when selecting phone area codes
+* https://github.com/afollestad/material-dialogs - for showing material dialogs
+* https://github.com/81813780/AVLoadingIndicatorView - loaders library - used for the typing indicator
+* https://github.com/googlei18n/libphonenumber - used for phone number validation and format
+* https://github.com/ParkSangGwon/TedPermission - for better async permissions support on Android 6+ devices
+* https://github.com/google/dagger - Dagger framework
+* https://github.com/JakeWharton/butterknife - Butterknife framework
+* https://github.com/greenrobot/EventBus - for dispatching and listening to events between services & views
+* https://github.com/scottyab/AESCrypt-Android - for messages encryption
+* https://github.com/bumptech/glide - for automatic & easy aync images
+* https://github.com/OneSignal/OneSignal-Android-SDK - OneSignal SDK for android
 
-#### Some screenshots from the app
+### Some screenshots from the app
 
 Coming soon...
