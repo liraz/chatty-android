@@ -55,4 +55,13 @@ Android chat application using Firebase, EventBus, Realm, OneSignal, Chatkit, Bu
 
 ### Some screenshots from the app
 
-Coming soon...
+<p align="center">
+  <img src="app/src/main/assets/screen1.png?raw=true" title="Menu" width="250"/>
+  <img src="app/src/main/assets/screen2.png?raw=true" title="Initial not logged in screen" width="250"/>
+  <img src="app/src/main/assets/screen3.png?raw=true" title="Sign up with phone" width="250"/>
+</p>
+<p align="center">
+  <img src="app/src/main/assets/screen4.png?raw=true" title="Sign up with email" width="250"/>
+  <img src="app/src/main/assets/screen5.png?raw=true" title="Add profile photo" width="250"/>
+  <img src="app/src/main/assets/screen6.png?raw=true" title="Verification" width="250"/>
+</p>
